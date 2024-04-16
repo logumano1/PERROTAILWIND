@@ -10,94 +10,158 @@
 <body>
     <div class="relative"><!--GENERAL-->
 
-        <div class="fixed w-full"><!--MENU FIJO-->
-
-            <div  class="text-sm font-INTER bg-blue-700 font-semibold text-white py-3 p-28 flex justify-between"><!--menu azul-->
-                <div><!--publi-->
-                    Protect your data, protect your bussiness. Add daily Droplet backups today.
-                </div>
-                <div class="flex gap-3"><!--enlaces-->
-                    <a href="">Blog</a>
-                    <a href="">Docs</a>
-                    <a href="">Get support</a>
-                    <a href="">Contact sales</a>
-                </div>
+        <div class="lg:hidden mt-0 px-7 py-4 flex justify-between items-center bg-white w-full"><!--menu blanco MOVILES-->
+            <div><!--logo-->
+                <img src="" class="h-9 hover:rotate-180 transition ease-in-out">
             </div>
 
-            <div class="py-4 p-28 flex justify-between text-s bg-white"><!--menu blanco-->
-                <div class="flex gap-6 items-center"><!--menu logo-->
-                    <img src="imagenes/digitalocean-2.svg" alt="" class="h-8">
-                </div><!--close menu logo-->
+            <div><!--hamburgasa-->
 
-                <div class="flex"><!--menu desplegable-->
-                    <div class="hover:bg-slate-200 rounded-full py-2 px-5 flex items-center gap-1">
-                        <a href="">Products</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3 items-center gap-1">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                        </svg>
+            </div>
 
+
+        </div><!--close menu blanco MOVILES-->
+
+        <div class="fixed w-full"><!--MENU FIJO-->
+
+            <div class="hidden lg:block"> 
+                <div  class="text-sm font-INTER bg-blue-700 font-semibold text-white py-3 p-28 flex justify-between"><!--menu azul-->
+                    <div><!--publi-->
+                        Protect your data, protect your bussiness. Add daily Droplet backups today.
+                    </div>
+                    <div class="flex gap-3"><!--enlaces-->
+                        <a href="">Blog</a>
+                        <a href="">Docs</a>
+                        <a href="">Get support</a>
+                        <a href="">Contact sales</a>
+                    </div>
+                </div><!--close menu azul-->
+            </div>    
+
+            <div class="hidden lg:block"> 
+                <div class="py-4 p-28 flex justify-between text-s bg-white"><!--menu blanco-->
+                    <div class="flex gap-6 items-center"><!--menu logo-->
+                        <img src="imagenes/digitalocean-2.svg" alt="" class="h-8">
+                    </div><!--close menu logo-->
+
+                    <div class="flex"><!--menu desplegable-->
+                        <div class="hover:bg-slate-200 rounded-full py-2 px-5 flex items-center gap-1">
+                            <a href="">Products</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3 items-center gap-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+
+                        </div>
+
+                        <div class="hover:bg-slate-200 rounded-full py-2 px-5 flex items-center gap-1">
+                            <a href="">Solutions</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3 items-center gap-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </div>
+
+                        <div id="butDev" class="hover:bg-slate-200 rounded-full py-2 px-5 flex items-center gap-1">
+                            <a href="">Developers</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3 items-center gap-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </div>
+
+                        <div class="hover:bg-slate-200 rounded-full py-2 px-5 flex items-center gap-1">
+                            <a href="">Bussiness</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3 items-center gap-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </div>
+
+                        <div class="hover:bg-slate-200 rounded-full py-2 px-5 flex items-center gap-1">
+                            <a href="">Pricing</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3 items-center gap-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </div>  
+                    </div><!--close menu desplegable-->
+
+                    <div class="flex gap-4 items-center"><!--menu login-->
+                        <a class="hover:bg-slate-200 rounded-full py-2 px-5" href="">Log in</a>
+                        <a class="bg-blue-600 py-2 px-5 text-white rounded-full hover:bg-blue-700" href="">Sign up </a>
+                    </div><!--close menu login-->
+
+                </div><!--close menu blanco-->
+            </div>
+
+            <div id="dropDev" class="hidden">
+                <div class="bg-white flex justify-between gap-15 px-40 py-10"><!--desplegable DEVELOPERS-->
+
+                    <div class="bg-gray-100 rounded-3xl p-10"><!--div 1-->
+                        <div class="font-semibold pb-6 pl-4">
+                            <h1>Our community</h1>
+                        </div>
+                            
+                        <div class="pb-6 hover:bg-gray-200 px-4 py-2 rounded-xl">
+                            <p class="font-semibold ">Community home</p>
+                            <p class="font-light ">DevOps and development guides</p>
+                        </div>
+                        <div class="pb-6 hover:bg-gray-200 px-4 py-2 rounded-xl">
+                            <p class="font-semibold ">CSS-Tricks</p>
+                            <p class="font-light ">All things web design</p>
+                        </div>
                     </div>
 
-                    <div class="hover:bg-slate-200 rounded-full py-2 px-5 flex items-center gap-1">
-                        <a href="">Solutions</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3 items-center gap-1">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                        </svg>
+                    <div class=""><!--div 2-->
+                        <div class="font-semibold pb-6">
+                            <h1>Resources</h1>
+                        </div>              
+
+                        <div class="text-gray-600">
+                            <p class="pb-1">Tutorials</p>
+                            <p class="pb-1">Questions and Answers</p>
+                            <p class="pb-1">Marketplace</p>
+                            <p class="pb-1">Tools</p>
+                            <p class="pb-1">Write for Donations</p>
+                            <p class="pb-1">Customer Stories</p>
+                            <p class="pb-1">DigitalOcean Blog</p>
+                        </div>
                     </div>
 
-                    <div class="hover:bg-slate-200 rounded-full py-2 px-5 flex items-center gap-1">
-                        <a href="">Developers</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3 items-center gap-1">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                        </svg>
+                    <div class=""><!--div 3-->
+                        <div class="font-semibold pb-6">
+                            <h1>Get involved</h1>
+                        </div>     
+
+                        <div class="text-gray-600">
+                            <p class="pb-1">Hatch Startup Program</p>
+                            <p class="pb-1">Open Source Sponsorships</p>
+                            <p class="pb-1">Hacktoberfest</p>
+                            <p class="pb-1">DO Impact</p>
+                            <p class="pb-1">Nonprofits</p>
+                        </div>
                     </div>
 
-                    <div class="hover:bg-slate-200 rounded-full py-2 px-5 flex items-center gap-1">
-                        <a href="">Bussiness</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3 items-center gap-1">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                        </svg>
+                    <div class=""><!--div 4-->
+
+                        <div>
+                            <h1 class="font-semibold pb-6">Documentation</h1>
+                        </div>
+
+                        <div class="text-gray-600">
+                            <p>Quickstart</p>
+                            <p>Compute</p>
+                            <p>Storage</p>
+                            <p>Managed Databases</p>
+                            <p>Containers</p>
+                            <p>Billing</p>
+                            <p>API Reference</p>
+                        </div>
                     </div>
 
-                    <div class="hover:bg-slate-200 rounded-full py-2 px-5 flex items-center gap-1">
-                        <a href="">Pricing</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3 items-center gap-1">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                        </svg>
-                    </div>  
-                </div><!--close menu desplegable-->
-
-                <div class="flex gap-4 items-center"><!--menu login-->
-                    <a class="hover:bg-slate-200 rounded-full py-2 px-5" href="">Log in</a>
-                    <a class="bg-blue-600 py-2 px-5 text-white rounded-full hover:bg-blue-700" href="">Sign up </a>
-                </div><!--close menu login-->
-
-            </div><!--close menu blanco-->
-
-            <div class="bg-white flex items-center gap-4"><!--desplegable DEVELOPERS-->
-                <div class="bg-gray-100 rounded-3xl p-6">
-                    <h1 class="font-semibold pt-6">Our community</h1>
-                    <p class="font-semibold pt-6">Community home</p>
-
-                </div>
-
-                <div>
-                    
-                </div>
-
-                <div>
-                    
-                </div>
-
-                <div>
-                    
-                </div>
-
+                </div><!--close desplegable DEVELOPERS-->
+            
             </div>
 
         </div><!--close MENU FIJO-->
 
-        <div class="bg-[url('/imagenes/hero-background.769bb51c.svg')] bg-cover"><!--background-->
+        <div class="lg:bg-blue-700 lg:bg-cover bg-[url('/imagenes/hero-background.769bb51c.svg')] bg-cover"><!--background-->
             <div class="text-white text-center pt-60"><!--texto-->
                 <p class="text-5xl pb-5 font-bold">Dream it. Build it. Grow it.</p>
                 <p class="text-lg">Move to the developer cloud optimized for business.</p>
@@ -161,5 +225,6 @@
 
     </div><!--close GENERAL-->
 
+    <script src="scripts.js"></script>
 </body>
 </html>
